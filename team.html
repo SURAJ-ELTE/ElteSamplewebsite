@@ -28,6 +28,7 @@
 
     .carousel {
       position: relative;
+      width: 100%;
       max-width: 960px;
       margin: 3rem auto;
       overflow: hidden;
@@ -53,6 +54,16 @@
       opacity: 1;
       z-index: 1;
     }
+
+    @media (max-width: 768px) {
+      .intro h1 {
+        font-size: 1.75rem;
+      }
+
+      .intro p {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body class="bg-black text-white">
@@ -70,8 +81,20 @@
         <a href="careers.html" class="text-white hover:text-blue-400">Careers</a>
         <a href="team.html" class="text-blue-400 underline">Team</a>
       </div>
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobileMenuBtn" class="text-white focus:outline-none text-2xl">&#9776;</button>
+      </div>
     </div>
   </nav>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-gray-900 text-white px-4 py-4 space-y-2">
+    <a href="index.html#about" class="block hover:text-blue-400">About</a>
+    <a href="index.html#services" class="block hover:text-blue-400">Services</a>
+    <a href="index.html#contact" class="block hover:text-blue-400">Contact</a>
+    <a href="careers.html" class="block hover:text-blue-400">Careers</a>
+    <a href="team.html" class="block hover:text-blue-400">Team</a>
+  </div>
 
   <!-- Intro Section -->
   <section class="intro">
@@ -93,6 +116,10 @@
   </footer>
 
   <script>
+    document.getElementById('mobileMenuBtn').onclick = function() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
     const images = document.querySelectorAll('.carousel img');
     let index = 0;
 
