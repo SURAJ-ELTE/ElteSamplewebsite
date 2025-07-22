@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers - ELTE</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    .glass {
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <!-- Navigation Bar -->
+  <nav class="glass fixed w-full z-50 shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-3 hover:opacity-80 transition duration-200">
+        <img src="assets/logo.jpg" alt="ELTE Logo" class="h-10 w-auto" />
+        <span class="font-bold text-2xl text-white">ELTE</span>
+      </a>
+      <div class="hidden md:flex space-x-4 items-center text-sm font-medium">
+        <a href="index.html" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-1 rounded-full shadow font-semibold">Home</a>
+        <a href="index.html#about" class="text-white hover:text-blue-400">About</a>
+        <a href="index.html#services" class="text-white hover:text-blue-400">Services</a>
+        <a href="index.html#contact" class="text-white hover:text-blue-400">Contact</a>
+        <a href="careers.html" class="text-white hover:text-blue-400">Careers</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="h-96 flex items-center justify-center bg-cover bg-center text-center relative" style="background-image: url('assets/pcb.jpg');">
+    <div class="absolute inset-0 bg-gradient-to-tr from-black via-blue-900 to-black opacity-80"></div>
+    <div class="relative z-10 px-6">
+      <h1 class="text-5xl font-extrabold mb-4 animate-pulse">Join Our Team</h1>
+      <p class="text-lg text-gray-300">ELTE is where innovation meets impact.</p>
+    </div>
+  </header>
+
+  <!-- Career Openings -->
+  <section class="pt-24 pb-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-4xl font-extrabold mb-10 text-center">Current Openings</h2>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="bg-gradient-to-b from-blue-800 to-blue-900 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-bold text-blue-300 mb-2">Embedded Software Engineer</h3>
+        <p class="text-sm text-gray-300 mb-2">? Tokyo, Japan</p>
+        <p class="text-gray-400 text-sm mb-4">Develop high-performance firmware and contribute to global smart products. C/C++, RTOS, and IoT experience preferred.</p>
+        <a href="mailto:info@elt-eng.com?subject=Application - Embedded Engineer" class="text-blue-400 hover:underline text-sm">Apply Now</a>
+      </div>
+
+      <div class="bg-gradient-to-b from-blue-800 to-blue-900 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-bold text-blue-300 mb-2">Hardware Design Engineer</h3>
+        <p class="text-sm text-gray-300 mb-2">? Egypt or Japan</p>
+        <p class="text-gray-400 text-sm mb-4">Design custom PCBs, perform evaluation, and work with cross-border teams. Experience with Altium Designer is a plus.</p>
+        <a href="mailto:info@elt-eng.com?subject=Application - Hardware Engineer" class="text-blue-400 hover:underline text-sm">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Photo Section -->
+  <section class="py-20 bg-gray-900 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-extrabold mb-6">Meet the Team</h2>
+      <p class="text-gray-400 mb-8 text-lg">Driven by passion, precision, and global collaboration.</p>
+      <img src="assets/Team1.jpg" alt="ELTE Team Photo" class="rounded-lg shadow-lg mx-auto max-w-full h-auto border border-gray-700 hover:scale-105 transform transition duration-300" />
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-center py-6 text-sm text-gray-400">
+    &copy; 2025 ELTE - ELARABY?Toyoichi Engineering Corporation. All rights res
